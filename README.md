@@ -5,6 +5,30 @@ A lightweight, agentless monitoring solution for Proxmox/Linux clusters. Built a
 ## Overview
 Overseer collects system metrics by injecting a Bash agent via SSH and parsing the `/proc` filesystem directly. No remote installation or persistent agents required.
 
+## Preview
+Example output from `healthcheck.sh`:
+```text
+--- SCAN 10.0.10.11 ---
+>> OVERSEER: proxmox << | 10VHS2BU02 | up 4 hours, 57 minutes
+─────────────────────────────────────────────────────────────────────
+ CPU [■·········]  16%  |  RAM [■■■■■·····]  56%  |  TMP [■■■■■·····]  50°C
+─────────────────────────────────────────────────────────────────────
+ GUESTS:  CT: 12 RUN / 1 STOP   |   VM: 2 RUN / 0 STOP
+─────────────────────────────────────────────────────────────────────
+ [ZFS] NONE
+ /            [■■■■■■■■····]  68% (1.1T/1.7T)
+ /boot/efi    [■···········]  10% (96M/1022M)
+─────────────────────────────────────────────────────────────────────
+ SYS: 1 FAIL | LOGS(1h): 3 ERR | USERS: 1 | NTP: YES
+ FAILED UNITS:
+  -> pve-container@108.service
+ PORTS: 111 22 25 8006 2222 ...
+─────────────────────────────────────────────────────────────────────
+ CPU TOP 3:
+   5896  13.3%  /usr/bin/kvm
+   1426   3.2%  pvestatd
+```
+
 ## Key Features
 - **Agentless**: Uses SSH pipe injection (`ssh host 'bash -s' < agent.sh`) to run in memory.
 - **Zero-Dep**: Remote execution relies only on standard Bash and coreutils.
