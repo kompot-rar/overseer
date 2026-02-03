@@ -1,0 +1,11 @@
+# Lista serwerów Proxmox Cluster (Lab Inventory)
+# Źródło: LAB_JOURNAL.md & ~/.ssh/config.d/homelab
+
+# NODE 1: MASTER (M715q)
+root@10.0.10.11
+
+# NODE 2: WORKER (M710q)
+root@10.0.10.12
+
+# NODE 3: CHAOS NODE (M83)
+root@10.0.10.13
