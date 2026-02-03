@@ -51,14 +51,14 @@ Example output from `healthcheck.sh`:
    ```bash
    python3 overseer_ui.py
    ```
- or
+  or
 
-  **Launch bash healthcheck**
-  ```bash
-  #local
-  bash scripts/healthcheck.sh
-  #remote
-  ssh root@10.0.10.11 "bash -s" < scripts/healthcheck.sh
+   **Launch bash healthcheck**
+   ```bash
+   #local
+   bash scripts/healthcheck.sh
+   #remote
+   ssh root@10.0.10.11 "bash -s" < scripts/healthcheck.sh
    ```
 
 ## Learning Goals
