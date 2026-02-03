@@ -1,6 +1,6 @@
 #!/bin/bash
 # =============================================================================
-# SKRYPT: healthcheck.sh (V5.1 - GOD MODE)
+# SKRYPT: healthcheck.sh (V5.1)
 # OPIS:   Proxmox Awareness, Log Sentinel, Security Watch, Hardware ID.
 # =============================================================================
 
