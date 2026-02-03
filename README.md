@@ -53,7 +53,7 @@ Example output from `healthcheck.sh`:
    ```
   or
 
-   **Launch bash healthcheck**
+   **Launch bash healthcheck**:
    ```bash
    #local
    bash scripts/healthcheck.sh
